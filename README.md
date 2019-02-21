@@ -1,3 +1,22 @@
+# SAMBA with LDAP as backend
+
+## ERIC ESCRIBA CURS 2018/2019 M06
+
+
+## EXPLICACIÓ
+
+En aquest repositori es troben els arxius necessaris per muntar un sistema de servidors LDAP i SAMBA (amb LDAP fent de backend de SAMBA). Per tant el sistema a muntar consta de dos contenidors docker: Ldap i Samba
+
+### Arquitectura
+
+Perquè SAMBA utilitzi LDAP com backend i els directoris HOME es montin automàticament  mitjançant SAMBA al loguejar necessitem el següent:
+
+- **Xarxa Local** anomenada **sambanet** (en aquesta practica) en la que els dockers es podran communicar entre si
+
+- Servidor **LDAP** docker on s'emmagatzemaran els usuaris i grups
+
+- Servidor **SAMBA** docker on s'emmagatzemaran els homes dels usuaris LDAP i locals
+
 
 ## IMATGES
 
