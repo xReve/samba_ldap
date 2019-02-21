@@ -20,8 +20,6 @@ cp /opt/docker/smb.conf /etc/samba/smb.conf
 cp /opt/docker/nslcd.conf /etc/nslcd.conf
 cp /opt/docker/ldap.conf /etc/openldap/ldap.conf
 cp /opt/docker/nsswitch.conf /etc/nsswitch.conf
-#cp /opt/docker/system-auth /etc/pam.d/system-auth
-#cp /opt/docker/pam_mount.conf.xml /etc/security/pam_mount.conf.xml
 
 
 # engegar el dimoni perque funcioni el getent
@@ -83,17 +81,17 @@ getent passwd
 
 # users ldap 
 
-echo -e "pere\npere" | smbpasswd -a pere
-echo -e "pau\npau" | smbpasswd -a pau
-echo -e "anna\nanna" | smbpasswd -a anna
-echo -e "marta\nmarta" | smbpasswd -a marta
-echo -e "jordi\njordi" | smbpasswd -a jordi
-echo -e "admin\nadmin" | smbpasswd -a admin
+echo -e "smbpere\nsmbpere" | smbpasswd -a pere
+echo -e "smbpau\nsmbpau" | smbpasswd -a pau
+echo -e "smbanna\nsmbanna" | smbpasswd -a anna
+echo -e "smbmarta\nsmbmarta" | smbpasswd -a marta
+echo -e "smbjordi\nsmbjordi" | smbpasswd -a jordi
+echo -e "smbadmin\nsmbadmin" | smbpasswd -a admin
 
 
 # users locals 
-echo -e "local01\nlocal01" | smbpasswd -a local01
-echo -e "local02\nlocal02" | smbpasswd -a local02
+echo -e "smblocal01\nsmblocal01" | smbpasswd -a local01
+echo -e "smblocal02\nsmblocal02" | smbpasswd -a local02
 
 
 
