@@ -34,7 +34,7 @@ Perquè SAMBA utilitzi LDAP com backend i els directoris HOME es montin automàt
 docker run --rm --name ldap -h ldap --network sambanet -d eescriba/ldapserver:smbldap
 
 **HOST**
-docker run --rm --name host -h host --network sambanet -it eescriba/sambahost:smbldap
+docker run --rm --privileged --name host -h host --network sambanet -it eescriba/sambahost:smbldap
 
 **SAMBA**
 docker run --rm --name samba -h samba --network sambanet -it eescriba/samba:smbldap
