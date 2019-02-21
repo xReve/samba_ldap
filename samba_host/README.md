@@ -13,7 +13,7 @@ MOUNT TYPE **CIFS**
 ## EXECUCIÓ
 
 ```
-docker run --rm --name host -h host --network sambanet -it eescriba/sambahost:smbldap
+docker run --rm --privileged --name host -h host --network sambanet -it eescriba/sambahost:smbldap
 
 ```
 
