@@ -2,6 +2,8 @@
 
 ## ERIC ESCRIBA CURS 2018/2019 M06
 
+Les imatges es troben disponibles a [eescriba](https://hub.docker.com/u/eescriba/)
+
 
 ## EXPLICACIÓ
 
